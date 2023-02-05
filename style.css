@@ -1,0 +1,43 @@
+.frame {
+  background-color: lightslategray;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+.charImage {
+  width: 50%;
+  border-radius: inherit;
+}
+.charData {
+  width: 50%;
+  display: block;
+  overflow: hidden;
+}
+.charData p {
+  word-wrap: break-word;
+  font-size: 1vw;
+  color: white;
+  text-align: center;
+}
+.app {
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1%;
+}
+
+@media screen and (max-width: 1199px) {
+  .app {
+    grid-template-columns: 1fr 1fr;
+  }
+  .charData p {
+    font-size: 2vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .app {
+    grid-template-columns: 1fr;
+  }
+  .charData p {
+    font-size: 3vw;
+  }
+}
